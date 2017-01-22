@@ -1,0 +1,22 @@
+<div>
+    <!--<label>Tamaño</label>
+    <input   pattern="[0-9]{3}" [(ngModel)]="sizeInput"/>
+    <label>número de puntos</label>
+    <input   pattern="[0-9]{3}" [(ngModel)]="sizeInput"/>-->
+    <button (click)="showOriginalPoints()">showOriginalPoints</button>
+    <button (click)="showVoronoiRegions()">showVoronoiRegions</button>
+
+    <button (click)="showDelaunayRegions()">showDelaunayRegions</button>
+    <button (click)="showVoronoiRelaxation()">showVoronoiRelaxation</button>
+    <button (click)="clearCanvas()">Clear</button>
+
+</div>
+<div>
+    <ul id="layer-list">
+        <li>
+            <canvas id="myCanvas" width="{{actualSize}}" height="{{actualSize}}"></canvas>
+        </li>
+
+    </ul>
+
+</div>
